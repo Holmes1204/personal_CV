@@ -1,0 +1,350 @@
+%-------------------------
+% Resume in Latex
+% Original Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+% Resume LONG Ver. in Latex
+% Author : John Doe
+% License : MIT
+%------------------------
+
+\documentclass[a4paper,12pt]{article}
+
+%% Packages{{{
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage[symbol*]{footmisc}
+%\input{glyphtounicode}
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+%% }}}
+
+%% Settings {{{
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.3in}
+\addtolength{\textheight}{1.0in}
+\addtolength{\skip\footins}{.3in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+%\pdfgentounicode=1
+%% }}}
+
+%% Custom Commands {{{
+\renewcommand{\thefootnote}{\fnsymbol{footnote}}
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeResearchHeading}[6]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+	  \small{#3} & \small{#4} \\
+      \textit{\small#5} & \textit{\small #6} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeResearchHeadingCo}[8]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+	  \small{#3} & \small{#4} \\
+      \textit{\small#5} & \textit{\small #6} \\
+      \textit{\small#7} & \textit{\small #8} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+%% }}}
+
+%%%%%%%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+%%----------HEADING----------{{{
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+    \begin{center}
+    	%\textbf{\Huge \scshape Hao Luan} \\ \vspace{1pt} 
+        \textbf{\Huge John Doe} \\ \vspace{5pt} 
+        \normalsize{Contact: \href{mailto:johndoe@stu.hit.edu.cn}{\tt\underline{johndoe@stu.hit.edu.cn}} $|$ \href{mailto:jdoe@university.edu}{{\tt\underline{jdoe@university.edu}}} }\\ \vspace{3pt} 
+        %\href{https://linkedin.com/in/...}{\underline{linkedin.com/in/johndoe}} $|$
+        \normalsize{Website: \href{https://johndoe.github.io}{\underline{\tt{https://johndoe.github.io}}} }
+    \end{center}
+
+%% }}}
+
+
+%%-----------EDUCATION----------- %{{{
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Harbin Institute of Technology}{Shenzhen, CHN}
+      {Bachelor of Engineering in Automation}{Sep. 2017 -- Jun. 2021}
+      \resumeItemListStart
+        \resumeItem{CGPA: 99.1/100, 4.0/4.0; Final-year GPA: 98.1/100}
+        \resumeItem{Thesis: ``Distributed Consensus of Multi-Agent Systems with  State Constraints under Switching Directed Graphs.''
+            [\href{https://johndoe.github.io/files/abstr-Doe_Thesis.pdf}{\underline{Abstract}}]
+        }
+        %\resumeItem{Major GPA: 3.95/4.0}
+        %\resumeItem{Ranking: 1/170}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+%% }}}
+
+%%-----------EXPERIENCE-----------{{{
+%\section{Research Experience}
+\section{Experience}
+  \resumeSubHeadingListStart
+    
+	% RA @ ABCD
+	\resumeResearchHeadingCo
+        {Research Assistant}{Aug. 2021 -- Present}
+        {Robotics Lab}{ABCD University}
+        {Supervisor: Prof. Mike T. Anonymous}{Dept. Electrical $\&$ Electronic Eng.}
+	    {Co-Supervisor: Dr. San Zhang}{Dept. Electrical $\&$ Electronic Eng.}
+        \resumeItemListStart
+            %\resumeItem{Researching on novel high-efficiency robot motion planning algorithms tackling constraints.}
+            \resumeItem{Developing an autonomous mobile manipulation platform operating in dynamic environments.}
+        \resumeItemListEnd
+
+	% RA @ HITSZ
+    \resumeResearchHeading
+        {Undergraduate Research Assistant}{Oct. 2019 -- Jun. 2021}
+        {XXX Lab}{Harbin Institute of Technology, Shenzhen}
+	    {Supervisor: Prof. Jie Mei}{School of Mechanical Engineering and Automation}
+        \resumeItemListStart
+            \resumeItem{Proposed a framework addressing the distributed consensus problem for multi-agent systems with constraints, uncertainties, and time-varying directed topologies.} 
+            \resumeItem{Presented distributed consensus algorithms, theoretical proof of convergence, numerical simulations, and physical experiments for validation.}
+        \resumeItemListEnd
+      
+	% Intern @ XYZ Co Ltd
+    \resumeResearchHeading
+        {Software Development Intern}{Mar. 2021 -- Jun. 2021}
+        {XYZ Co. Ltd.}{Shenzhen, CHN}
+	    {Supervisor: Dr. Si Li}{Head of QQQQ Dept.}
+        \resumeItemListStart
+            \resumeItem{Developed drivers for the vehicle chassis of the company's autonoumous robotic cleaning products.} 
+        \resumeItemListEnd
+
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+
+	% Visit @ SYSU
+    \resumeResearchHeading
+      {Visiting Research Student}{Nov. 2015 -- May 2016}
+      {Robotics Laboratory}{Sun Yat-sen University}
+	  {Supervisor: Prof. Hui Cheng}{School of Computer Science and Engineering}
+      \resumeItemListStart
+        \resumeItem{Optimized and implemented a centralized offline task-allocation algorithm for multi-robot systems based on the Ant Colony System.}
+        %\resumeItem{Presented at the concluding report and oral defense.}
+      \resumeItemListEnd
+
+ \resumeSubHeadingListEnd
+%%}}}
+
+%%-------------PUBLICATIONS----------------{{{
+ \section{Publications \& Preprints}%
+    $^*$ indicates equal contribution. 
+    \begin{itemize}[topsep=0.4em, itemsep=0.4em]
+        \item { S.~Zhang$^*$, \textbf{J.~Doe}$^*$, W.~Wang, S.~Li, and M.~T.~Anonymous,
+			``Robotic autonomous trolley collection with progressive perception and nonlinear model predictive control,'' 
+            accepted to \emph{2022 IEEE International Conference on Robotics and Automation (ICRA)}, 
+		    2022.
+            Preprint available: \href{https://arxiv.org/abs/2110.06648}{\tt https://arxiv.org/abs/2110.06648}. 
+            [\href{https://edmundluan.github.io/trolley-collection/}{\underline{Page}}]
+            [\href{https://arxiv.org/pdf/2110.06648.pdf}{\underline{PDF}}]
+        }
+		\item { \textbf{J.~Doe}, J.~Mei,
+			   ``Distributed constrained consensus of multi-agent systems with uncertainties and disturbances under switching directed graphs,'' 
+               \emph{IEEE Transactions on ABCDEFG},
+		       2022.
+               \textbf{Under Review}.
+                [\href{https://johndoe.github.io/consensus/}{\underline{Page}}]
+                [\href{https://johndoe.github.io/files/abstr-doe_distributed_2022.pdf}{\underline{Abstract}}]
+        }
+	\end{itemize}  
+%%}}}
+
+%%-----------ACADEMIC SERVICES-----------{{{
+\section{Selected Academic Services}
+    \begin{itemize}[leftmargin=0.1in,topsep=0.6em, parsep=0.5em, label={}]%
+        \item{
+            \textbf{Conference Reviewing}
+            \begin{itemize}[itemsep=0.2em, topsep=0em]
+                \item IEEE International Conference on Robotics and Automation (ICRA 2022) 
+                \item IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS 2022) 
+                \item IEEE International Conference on Robotics and Biomimetics (ROBIO 20/21)
+            \end{itemize}  
+        }
+    \end{itemize}
+%%}}}
+
+	
+%%-----------HONORS-----------{{{
+\section{Honors \& Awards}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+        {Outstanding Bachelor's Thesis (top 4\%)}{2021}
+      \resumeProjectHeading
+	    {Finalist in the Mathematical Contest In Modeling (MCM)}{2020}
+      \resumeProjectHeading
+        {Undergraduate Academic Merit Scholarship (first class)}{2018, 2019, 2020}
+      \resumeProjectHeading
+        {First Prize in the National Olympiad in Informatics in Provinces (NOIP)}{2016}
+      \resumeProjectHeading
+		{Distinguished Honor Roll in the American Mathematics Contest (AMC) 12, invited to the AIME}{2016}
+    
+    \resumeSubHeadingListEnd
+%%}}}
+
+%%-----------PROJECTS-----------{{{
+\section{Selected Projects}
+    \resumeSubHeadingListStart
+      \resumeSubheading
+        {Robotic Autonomous Trolley Collection at Airports}{Aug. 2021 -- Present}
+        {Advisors: Prof. Mike T. Anonymous, Dr. Si Li}{UABCD}
+          \resumeItemListStart
+            \resumeItem{Developing decision-making modules for a robotic solution to the autonomous trolley collection task at airports. Working on perception-aware planning and multi-robot collaboration.
+            }
+            \resumeItem{Proposed a safety-critical motion planner prototype for obstacle avoidance and perception-aware planning. 
+                Conducted realistic tests and validated the effectiveness of the prototype. 
+            }
+          \resumeItemListEnd
+
+
+      \resumeSubheading
+        {Unmanned Palletizing Using Six-axis Robot Arm}{Apr. 2020 -- Jul. 2020}
+        {Advisor: Prof. Yunjiang Lou, Associate Dean}{HITSZ}
+          \resumeItemListStart
+            \resumeItem{Designed robot manipulator control algorithms based on the 6-DOF manipulator's forward and inverse kinematics using LFPB trajectory planning.} 
+            \resumeItem{Developed a user interface for managing position information of manipulated objects.}
+            \resumeItem{Achieved fast palletizing and grasping motions with high accuracy.}
+          \resumeItemListEnd
+      
+      \resumeSubheading
+        {Vision-Based Auto Parking}{Oct. 2019 -- Dec. 2019}
+        {Advisor: Prof. Haoyao Chen}{HITSZ}
+          \resumeItemListStart
+            \resumeItem{Identified a specific parking sign by adopting traditional vision techniques including filtering, color segmentation, perspective transformation, Canny edge detection, polygon envelope, etc.}
+            \resumeItem{Designed an online close-loop controller for a differential-drive autonomous car, employing multiple control schemes and leveraging vision information.}
+            \resumeItem{Integrated searching, detection, and motion control with ROS and realized fully automated parking.}
+          \resumeItemListEnd
+    
+    \resumeSubHeadingListEnd
+%%}}}
+
+%%-----------SKILLS-----------{{{
+\section{Skills}
+    \begin{itemize}[leftmargin=3.5mm, label={}]
+        \setlength{\itemsep}{0.05em}
+        \setlength{\topsep}{1em}
+        \item
+                \textbf{Languages}{: English (\textsl{\small TOEFL iBT}\textsuperscript{\textregistered} 117/120), Mandarin Chinese (native), Cantonese (native)}
+        \item \textbf{Programming}{: C/C++, Python, Julia, Pascal, Java, Go}
+        \item \textbf{Tools}{: Git, MATLAB/Simulink, PyTorch, Wolfram Mathematica, ROS, VS Code, \LaTeX} 
+    \end{itemize}
+%%}}}
+
+%%-----------MISCELLANEOUS-----------{{{
+%\section{Extracurricular Activities}
+\section{Miscellaneous}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+        {\textbf{Athletics}: Left/Right Forward, HITSZ Student Soccer Team}{2017 – 2021}
+      \resumeProjectHeading
+        {\textbf{Volunteer services}: 2018 Hong Kong Universities and Colleges Forum at HITSZ}{2018}
+      \resumeProjectHeading
+        {\textbf{\textsl{\small TOEFL iBT}\textsuperscript{\textregistered}}: 
+                R30+L30+S28+W29 
+         }{2020}
+      \resumeProjectHeading
+         {\textbf{\textsl{\small GRE}\textsuperscript{\textregistered} General}: 
+                V168+Q170+AW5.0
+         }{2019}
+    \resumeSubHeadingListEnd
+%%}}}
+
+% That'll be all folks. 
+\end{document}
+

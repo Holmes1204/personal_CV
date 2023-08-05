@@ -1,0 +1,311 @@
+%-------------------------
+% Resume in Latex
+% Original Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+% Resume LONG Ver. in Latex
+% Author : John Doe
+% License : MIT
+%------------------------
+
+\documentclass[a4paper,12pt]{article}
+
+%% Packages{{{
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage[symbol*]{footmisc}
+%\input{glyphtounicode}
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+%% }}}
+
+%% Settings {{{
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.3in}
+\addtolength{\textheight}{1.0in}
+\addtolength{\skip\footins}{.3in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+%\pdfgentounicode=1
+%% }}}
+
+
+\renewcommand{\thefootnote}{\fnsymbol{footnote}}
+
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \small #4 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+
+\newcommand{\resumeResearchHeading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+	  \textit{\small{#3}} & \hspace{-100pt} \textit{\small{#4}} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\newcommand{\ScorelistBegin}{
+	Selected Major Courses:\\
+	\begin{tabular*}{0.7\textwidth}[t]{l@{\extracolsep{\fill}}r}
+	}
+\newcommand{\ScorelistEnd}{\end{tabular*}\vspace{-7pt}}
+\newcommand{\Scoreitem}[2]{
+	\hspace{12pt} -	#1 & #2 \\
+}
+%% }}}
+
+%%%%%%%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+\begin{center}
+    \textbf{\Huge Jiahui Zhang} \\ \vspace{5pt} 
+    \normalsize{Tel: +86 15986690353, 
+    	Email: \href{mailto:holmeszh@qq.com}{\tt\underline{holmeszh@qq.com}} , 
+    	Web: \href{https://holmes1204.github.io}{\underline{\tt{https://holmes1204.github.io}}}}\\ 
+    	\vspace{3pt} 
+\end{center}
+
+
+\section{EDUCATION}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Harbin Institute of Technology, Shenzhen, China}{Aug. 2019 -- Jun. 2023}
+      {Bachelor of Engineering in Automation}{}
+	\resumeItemListStart
+		\resumeItem{Overall GPA:3.594/4, Overall Score:87.471/100}
+		\item \ScorelistBegin
+			\Scoreitem{High-level Language Programming}{93.7}
+			\Scoreitem{Design and Practice of Robotic System}{89}
+			\Scoreitem{Theoretical Mechanics II}{84}
+			\Scoreitem{Fundamentals of Machine Design}{85}
+			\Scoreitem{Fundamentals of Analog Electronics}{88}
+			\Scoreitem{Digital Electronics Technology Foundation}{89}
+			\Scoreitem{Signal Analysis and Processing}{88}
+			\Scoreitem{System Modeling and Simulation}{93}
+			\Scoreitem{Automatic Control Theory A, B}{91,92}
+			\Scoreitem{Automatic Control Practice A, B}{84,93}
+			\ScorelistEnd
+		\resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+\section{honors and awards}
+\resumeSubHeadingListStart
+	\resumeProjectHeading
+	{Outstanding Student Scholarship Third Prize}{Nov. 2022}
+	\resumeProjectHeading
+	{The 20th China University Robot Competition (ROBOCON) Third Prize}{Jul. 2021}
+	\resumeProjectHeading
+	{School Engineering Training Competition  Second Prize}{Mar. 2021}
+	\resumeProjectHeading
+	{Excellent Student Cadre}{Dec. 2021}
+	\resumeProjectHeading
+	{The Robot Developer Competition (RoboCom) First Prize in automatic part}{Dec.  2020}
+	\resumeProjectHeading
+	{The Robot Developer Competition (RoboCom) Second Prize in semi-automatic part}{Dec. 2020}
+	\resumeProjectHeading
+	{Outstanding Student Scholarship Third Prize}{Nov. 2021}
+	\resumeProjectHeading
+	{Mathematical Contest in Modeling Third Prize}{Oct. 2020}
+	\resumeProjectHeading
+	{Outstanding New Undergraduate Student Third Prize}{Sept. 2019}
+\resumeSubHeadingListEnd
+
+
+
+\section{research experience}
+  \resumeSubHeadingListStart
+	\resumeResearchHeading
+        {Quadruped Robot Dynamic Grasping Based on WBC}{Mar. 2023 -- Jun. 2023}
+        {Supervisor: Prof.Xiaogang Xiong}{School of Mechanical Engineering and Automation}
+        \resumeItemListStart
+            \resumeItem{Researching on novel high-efficiency robot motion planning algorithms tackling constraints.}
+            \resumeItem{Developing an autonomous mobile manipulation platform operating in dynamic environments.}
+        \resumeItemListEnd
+    \resumeResearchHeading
+        {Quadruped Robot Design and Control in RoboCon}{Oct. 2021 -- Aug. 2022}
+	    {Supervisor: Prof.Yunjiang Lou, Associate Dean}{School of Mechanical Engineering and Automation}
+        \resumeItemListStart
+            \resumeItem{Proposed a framework addressing the distributed consensus problem for multi-agent systems with constraints, uncertainties, and time-varying directed topologies.} 
+            \resumeItem{Presented distributed consensus algorithms, theoretical proof of convergence, numerical simulations, and physical experiments for validation.}
+        \resumeItemListEnd
+ \resumeSubHeadingListEnd
+
+
+\section{selected projects}
+    \resumeSubHeadingListStart
+      \resumeSubheading
+        {Robocon 2021}{Oct. 2020 -- Aug. 2021}
+        {Advisors: Prof.Xiaogang Xiong, Prof.Yunjiang Lou, Associate Dean}{HITSZ}
+          \resumeItemListStart
+            \resumeItem{Developing decision-making modules for a robotic solution to the autonomous trolley collection task at airports. Working on perception-aware planning and multi-robot collaboration.
+            }
+            \resumeItem{Proposed a safety-critical motion planner prototype for obstacle avoidance and perception-aware planning. 
+                Conducted realistic tests and validated the effectiveness of the prototype. 
+            }
+          \resumeItemListEnd
+
+      \resumeSubheading
+        {Hexalink Table Tennis Shooting Manipulator}{Mar. 2022 -- Jun. 2022}
+        {Advisor: Prof. Yunjiang Lou, Associate Dean}{HITSZ}
+          \resumeItemListStart
+            \resumeItem{Designed robot manipulator control algorithms based on the 6-DOF manipulator's forward and inverse kinematics using LFPB trajectory planning.} 
+            \resumeItem{Developed a user interface for managing position information of manipulated objects.}
+            \resumeItem{Achieved fast palletizing and grasping motions with high accuracy.}
+          \resumeItemListEnd
+      
+	\resumeSubheading
+	{RoboCOM}{Oct. 2019 -- Dec. 2019}
+	{Advisor: Prof. Xiaogang Xiong}{HITSZ}
+	\resumeItemListStart
+	\resumeItem{Identified a specific parking sign by adopting traditional vision techniques including filtering, color segmentation, perspective transformation, Canny edge detection, polygon envelope, etc.}
+	\resumeItem{Designed an online close-loop controller for a differential-drive autonomous car, employing multiple control schemes and leveraging vision information.}
+	\resumeItem{Integrated searching, detection, and motion control with ROS and realized fully automated parking.}
+	\resumeItemListEnd
+	
+	\resumeSubheading
+	{Rov underwater}{Oct. 2019 -- Dec. 2019}
+	{Advisor: Prof. Xiaogang Xiong}{HITSZ}
+	\resumeItemListStart
+	\resumeItem{1}
+	\resumeItemListEnd
+	
+	\resumeSubheading
+	{Vision-based tracking}{Oct. 2019 -- Dec. 2019}
+	{Advisor: Prof. Haoyao Chen}{HITSZ}
+	\resumeItemListStart
+	\resumeItem{1}
+	\resumeItemListEnd
+	\resumeSubheading
+	{grade one project}{Oct. 2019 -- Dec. 2019}
+	{Advisor: Prof. Xiaogang Xiong}{HITSZ}
+	\resumeItemListStart
+	\resumeItem{1}
+	\resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+
+\section{work experience}
+\resumeSubHeadingListStart
+	\resumeResearchHeading
+	{WT Robot-team}{Sept. 2020 -- Aug. 2022}
+	{Member of a robotic team}{Harbin Institute of Technology}
+	\resumeItemListStart
+	\resumeItem{Researching on novel high-efficiency robot motion planning algorithms tackling constraints.}
+	\resumeItem{Developing an autonomous mobile manipulation platform operating in dynamic environments.}
+	\resumeItemListEnd
+
+
+	\resumeResearchHeading
+	{Innox sz}{Sept. 2022 -- Present}
+	{Intern}{Innox sz}
+	\resumeItemListStart
+	\resumeItem{Proposed a framework addressing the distributed consensus problem for multi-agent systems with constraints, uncertainties, and time-varying directed topologies.} 
+	\resumeItem{Presented distributed consensus algorithms, theoretical proof of convergence, numerical simulations, and physical experiments for validation.}
+	\resumeItemListEnd
+\resumeSubHeadingListEnd
+
+\section{skills}
+    \begin{itemize}[leftmargin=3.5mm, label={}]
+        \setlength{\itemsep}{0.05em}
+        \setlength{\topsep}{1em}
+        \item
+                \textbf{Languages}{: English (CET4 553/710), Mandarin Chinese (native), Cantonese (native)}
+        \item \textbf{Programming}{: C/C++, Python,Shell script}
+        \item \textbf{Tools}{: Ubuntu,Git, MATLAB, PyTorch, Ansys, Solidworks, ROS, VS Code, \LaTeX, Eigen} 
+    \end{itemize}
+    
+%\section{Extracurricular Activities}
+\section{miscellaneous}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+        {\textbf{Athletics}: Left/Right Forward, HITSZ Student Soccer Team}{2017 – 2021}
+      \resumeProjectHeading
+        {\textbf{Volunteer services}: 2018 Hong Kong Universities and Colleges Forum at HITSZ}{2018}
+      \resumeProjectHeading
+        {\textbf{\textsl{\small TOEFL iBT}\textsuperscript{\textregistered}}: 
+                R30+L30+S28+W29 
+         }{2020}
+      \resumeProjectHeading
+         {\textbf{\textsl{\small GRE}\textsuperscript{\textregistered} General}: 
+                V168+Q170+AW5.0
+         }{2019}
+    \resumeSubHeadingListEnd
+
+\end{document}
+
